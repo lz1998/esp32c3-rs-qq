@@ -3,7 +3,8 @@ use std::mem::MaybeUninit;
 use std::ptr;
 use std::sync::atomic::{AtomicPtr, Ordering};
 use std::thread;
-use no_atomic::AtomicUsize;
+// use no_atomic::AtomicUsize;
+use std::sync::atomic::AtomicUsize;
 use cache_padded::CachePadded;
 
 use crate::{PopError, PushError};

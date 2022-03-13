@@ -19,7 +19,6 @@ keywords = ["park", "notify", "thread", "wake", "condition"]
 categories = ["concurrency"]
 exclude = ["/.*"]
 [dependencies]
-no_atomic = {path="../no_atomic"}
 log = "0.4.11"
 [dev-dependencies]
 easy-parallel = "3.0.0"

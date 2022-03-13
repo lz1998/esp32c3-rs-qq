@@ -18,7 +18,6 @@ exclude = ["/.*"]
 default = ["std"]
 std = []
 [dependencies]
-no_atomic = {path="../no_atomic"}
 log = "0.4.11"
 
 [dev-dependencies]

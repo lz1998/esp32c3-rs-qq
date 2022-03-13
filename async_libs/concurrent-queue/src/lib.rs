@@ -33,11 +33,11 @@
 use crate::bounded::Bounded;
 use crate::single::Single;
 use crate::unbounded::Unbounded;
-use no_atomic::AtomicUsize;
+
 use std::error;
 use std::fmt;
 use std::panic::{RefUnwindSafe, UnwindSafe};
-use std::sync::atomic::{self, Ordering};
+use std::sync::atomic::{self,AtomicUsize, Ordering};
 
 mod bounded;
 mod single;

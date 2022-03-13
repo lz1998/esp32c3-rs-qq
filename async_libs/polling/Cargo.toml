@@ -23,7 +23,6 @@ std = []
 [dependencies]
 cfg-if = "1"
 log = "0.4.11"
-no_atomic = {path="../no_atomic"}
 
 [target.'cfg(any(unix, target_os = "fuchsia", target_os = "vxworks"))'.dependencies]
 libc = "0.2.77"

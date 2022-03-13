@@ -1,8 +1,8 @@
 use std::cell::UnsafeCell;
 use std::mem::MaybeUninit;
-use std::sync::atomic::{Ordering};
+use std::sync::atomic::{AtomicUsize,Ordering};
 use std::thread;
-use no_atomic::AtomicUsize;
+
 use cache_padded::CachePadded;
 
 use crate::{PopError, PushError};
