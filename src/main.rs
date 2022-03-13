@@ -109,7 +109,7 @@ const SSID: &str = "SSID";
 const PASS: &str = "PASS";
 static UIN: i64 = 1000i64;
 static PASSWORD: &str = "YOUR";
-static GROUP_CODE: i64 = 528320326i64;
+static GROUP_CODE: i64 = 1000i64;
 #[cfg(esp32s2)]
 include!(env!("EMBUILD_GENERATED_SYMBOLS_FILE"));
 

@@ -1,3 +1,17 @@
+# ESP32C3 rs-qq的~~简易~~不完整实现
+编译过程参考ESP32 STD demo app 需要替换代码中以下几个变量
+
+```rust
+#[allow(dead_code)]
+#[cfg(not(feature = "qemu"))]
+const SSID: &str = "SSID";
+#[allow(dead_code)]
+#[cfg(not(feature = "qemu"))]
+const PASS: &str = "PASS";
+static UIN: i64 = 1000i64;
+static PASSWORD: &str = "YOUR";
+static GROUP_CODE: i64 = 1000i64;
+```
 # Rust on ESP32 STD demo app
 
 A demo STD binary crate for the ESP32[XX] and ESP-IDF, which connects to WiFi, Ethernet, drives a small HTTP server and draws on a LED screen.
